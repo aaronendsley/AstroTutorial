@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "Aarons cool Astro Page"
 ---
 
 <html lang="en">
@@ -8,10 +8,10 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Aaron's Astro Page</title>
+		<title>Aaron's Astro Page: {pageTitle}</title>
 	</head>
 	<body>
 		<nav><ul><li><a href="/">Home</a></li><li><a href="/about/">About</a></li><li><a href="/blog/">blog</a></li></ul></nav>
-		<h1>Aaron's Astro Page</h1>
+		<h1>{pageTitle}</h1>
 	</body>
 </html>
