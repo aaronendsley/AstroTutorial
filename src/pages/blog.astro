@@ -1,21 +1,10 @@
 ---
 import '../styles/global.css';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-const pageTitle="THE BLOG"
+const pageTitle="THE BLOG";
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Aaron's Astro Page:{pageTitle}</title>
-	</head>
-	<body>
-        <Header/>
-		<h1>{pageTitle}</h1>
+	<BaseLayout pageTitle={pageTitle}>
         <h2>Things that were written</h2>
         <p>Lots of words that i have written, lots of writting that was done!</p>
         <ul>
@@ -23,10 +12,5 @@ const pageTitle="THE BLOG"
             <li><a href="/posts/posts-2/">Post 2</a></li>
             <li><a href="/posts/posts-3/">Post 3</a></li>
         </ul>
-		<Footer/>
-		<script>
-			import '../scripts/menu.js';
-		</script>
-	</body>
-
-</html>
+	</BaseLayout>
+		
