@@ -3,7 +3,13 @@ const platform = "github";
 const username = "withastro";
 import Social from '../components/Social.astro'
 ---
-
+<style>
+    footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 <footer>
  <p>Aaron Endsley 2023</p>
  <Social platform="twitter" username="aaronendsleydev"/>
